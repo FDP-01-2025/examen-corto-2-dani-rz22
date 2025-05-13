@@ -74,7 +74,7 @@ int main(){
                 } else{
                     cout << "Compra exitosa"; 
                 }
-                break; 
+            break; 
 
             case 3: cout << "1. Camisa Casual (descuento del 30%)" << endl;
                         cout << "El precio es de: $90 " << endl;   
@@ -99,7 +99,7 @@ int main(){
                 } else{
                     cout << "Compra exitosa"; 
                 }
-                break; 
+            break; 
         }
 
     } else {
