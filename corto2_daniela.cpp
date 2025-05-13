@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 
     //Se declaran las variables de tipo int 
-    int edad, tallas, genero, precio_prenda, dinero, prenda, precio2; 
+    int edad, tallas, genero, precio_prenda, dinero, prenda; 
 
     //Dato "quemado" con la cantidad de dinero disponible
     dinero = 300; 
@@ -52,8 +52,7 @@ int main(){
                 if(precio_prenda <= dinero){
                     cout << "No tiene suficiente dinero"; 
                 } else{
-                    cout << "Compra exitosa, su saldo restante es: "; 
-                    cout << precio_prenda - dinero; 
+                    cout << "Compra exitosa, su saldo restante es: ";
                 }
             break; 
 
@@ -74,29 +73,33 @@ int main(){
                     cout << "No tiene suficiente dinero"; 
                 } else{
                     cout << "Compra exitosa"; 
-                    cout << precio_prenda -= dinero; 
                 }
                 break; 
 
-            case 3: cout << "1. Camisa Casual: $90 (descuento del 30%)" << endl;
-            cout << "2. Pantalón Formal: $130 (descuento del 30%)" << endl;
-            cout << "3. Chaqueta Premium: $900 (descuento del 30%)" << endl;
-                    
-            cout <<  "4. Blusa Moderna: $80 (descuento del 20%)" << endl;
-            cout <<  "5. Falda Elegante: $110 (descuento del 20%)" << endl;
-            cout <<  "6. Abrigo Premium: $250 (descuento del 20%)" << endl;
+            case 3: cout << "1. Camisa Casual (descuento del 30%)" << endl;
+                        cout << "El precio es de: $90 " << endl;   
+            cout << "2. Pantalón Formal (descuento del 30%)" << endl;
+                        cout << "El precio es de: $130 " << endl;   
+            cout << "3. Chaqueta Premium (descuento del 30%)" << endl;
+                        cout << "El precio es de: $900 " << endl;   
+            cout <<  "4. Blusa Moderna (descuento del 20%)" << endl;
+                        cout << "El precio es de: $80 " << endl;   
+            cout <<  "5. Falda Elegante (descuento del 20%)" << endl;
+                        cout << "El precio es de: $110 " << endl;   
+            cout <<  "6. Abrigo Premium (descuento del 20%)" << endl;
+                        cout << "El precio es de: $250 " << endl;   
 
             //El usuario debe de seleccionar el numero de prenda que desea comprar, si la prenda sobrpasa los $300 dolares 
             //la compra no se podra realizar, en cambio si es menor a esta cantidad sera realizado exitosamente
                 
                 cout << "Seleccione el producto que desea comprar" << endl;
                 cin >> prenda; 
-                if(prenda > dinero){
+                if(precio_prenda > dinero){
                     cout << "No tiene suficiente dinero"; 
                 } else{
                     cout << "Compra exitosa"; 
                 }
-            break; 
+                break; 
         }
 
     } else {
